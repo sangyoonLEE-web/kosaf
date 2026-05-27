@@ -23,8 +23,18 @@ img {
   position: relative;
   max-width: 1400px;
   width: 100%;
+  margin: 0 auto;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+a,
+button {
+  font-family: "Pretendard";
+}
 /* 스타일 가이드 */
 :root {
   --main--blue: rgba(0, 134, 205, 1);
