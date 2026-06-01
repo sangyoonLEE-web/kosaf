@@ -1,0 +1,260 @@
+.n-tab-wrap {
+  margin-top: 220px;
+}
+.n-tab-wrap h2 {
+  font-size: var(--title--1b);
+  text-align: center;
+  margin-bottom: 10%;
+}
+/* top */
+.n-tab-top {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5%;
+  justify-content: space-between;
+}
+.n-tab-menu {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--gray-scale--0eee);
+  border-radius: 50px;
+}
+.tab-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: var(--title--menub);
+  padding: clamp(10px, 1vw, 14px) clamp(16px, 2vw, 24px);
+  cursor: pointer;
+  color: var(--gray-scale--sub-txt666);
+}
+.tab-btn.active {
+  background-color: var(--main--blue);
+  color: #fff;
+}
+.n-detail {
+  border: none;
+  font-size: var(--title--menub);
+  background-color: var(--gray-scale--0eee);
+  border-radius: 100%;
+  padding: 1%;
+  cursor: pointer;
+}
+.n-tab-con.active {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  aspect-ratio: 3.59 / 1;
+}
+/* 공지사항 영역 */
+.n-tab-content {
+  position: relative;
+  width: 100%;
+}
+/* .n-tab-con.active ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}  */
+.n-tab-con.active ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 2.5%;
+}
+/* 공지사항 카드 */
+.notice-card {
+  display: flex;
+  box-shadow: var(--icon-shadow);
+  border-radius: 20px;
+  padding: 8%;
+}
+.notice-card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.n-top {
+  font-size: var(--menu--sub2);
+  border-radius: 20px;
+  padding: 3%;
+  color: #fff;
+  width: fit-content;
+  background-color: var(--sub-point--red);
+}
+.notice-card:nth-child(2) .n-top {
+  background-color: var(--sub-point--green);
+}
+.notice-card:nth-child(3) .n-top {
+  background-color: var(--main--blue);
+}
+.notice-card:nth-child(4) .n-top {
+  background-color: var(--sub-point--navy);
+}
+hr {
+  margin: 1em 0;
+  color: var(--gray-scale--0eee);
+}
+.n-title {
+  padding: 1em 0;
+  font-size: var(--title--menub);
+}
+.n-desc {
+  flex-grow: 1;
+  line-height: 1.2;
+  padding-bottom: 8em;
+}
+.n-date {
+  font-size: var(--menu--sub2);
+  color: var(--gray-scale--2999);
+}
+/* 신청일정 */
+.cal-table {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+/* 캘린더 */
+#calendar {
+  width: 35%;
+  border-radius: 20px;
+}
+#calendar_weekdays div {
+  display: inline-block;
+  vertical-align: top;
+}
+#calendar_content,
+#calendar_weekdays,
+#calendar_header {
+  position: relative;
+  height: fit-content;
+  /* width: 320px; */
+  overflow: hidden;
+  z-index: 10;
+}
+#calendar_weekdays div,
+#calendar_content div {
+  /* width: 40px;
+  height: 40px; */
+  overflow: hidden;
+  text-align: center;
+  background-color: #ffffff;
+  color: #787878;
+}
+#calendar_content {
+  border-radius: 0px 0px 12px 12px;
+}
+#calendar_content div {
+  float: left;
+}
+#calendar_content div:hover {
+  background-color: #f8f8f8;
+}
+#calendar_content div.blank {
+  background-color: #e8e8e8;
+}
+#calendar_header,
+#calendar_content div.today {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+#calendar_content div.today {
+  color: #ffffff;
+}
+#calendar_header {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: #ff6860;
+  border-radius: 12px 12px 0px 0px;
+}
+#calendar_header h1 {
+  font-size: 1.2em;
+  color: #ffffff;
+  float: left;
+  width: 70%;
+}
+i[class^="fa fa-chevron"] {
+  color: #ffffff;
+  float: left;
+  width: 15%;
+  border-radius: 50%;
+}
+#calendar_weekdays,
+#calendar_content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#calendar_weekdays div,
+#calendar_content div {
+  width: calc(100% / 7);
+  aspect-ratio: 1 / 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 일정 */
+.schedule-table {
+  display: flex;
+  width: 55%;
+  overflow: hidden;
+  border: 1px solid var(--gray-scale--sub-txt666);
+  border-radius: 20px;
+}
+
+.schedule-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  height: auto;
+}
+
+.schedule-table th,
+.schedule-table td {
+  height: clamp(40px, 5vw, 71px);
+  text-align: center;
+  border-bottom: 1px solid var(--gray-scale--2999);
+}
+
+.schedule-table th {
+  background-color: var(--sub-point--skyblue);
+  font-size: var(--title--menub);
+  font-weight: 700;
+  color: #333;
+}
+
+.schedule-table td {
+  font-size: var(--title--menub);
+  color: var(--gray-scale--sub-txt666);
+}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  width: 30%;
+  border-right: 1px solid var(--gray-scale--sub-txt666);
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+/* 보도자료 */
+.bodo-card {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--icon-shadow);
+}
+.b-inner {
+  padding: 8%;
+  padding-top: 0;
+}
+/* 작업 중 다른 탭 숨김 처리 */
+.n-tab-con {
+  display: none;
+}

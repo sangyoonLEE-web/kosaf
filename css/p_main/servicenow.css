@@ -6,42 +6,45 @@
   padding-right: 20px;
   background-color: aliceblue;
 } */
- /* 전체 */
+/* 전체 */
 .service-now-wrap {
   position: relative;
   width: 100%;
   margin-top: 220px;
-  padding-left: clamp(20px, 5vw, 260px);
 }
 /* top */
 .service-top {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
-  background-color: antiquewhite;
+  margin-bottom: 5%;
+  width: 100%;
 }
 .service-top h2 {
   font-size: var(--title--1b);
 }
-/* inner */
-.service-now-wrap.inner {
-  position: relative;
-  max-width: min(1660px, 100%);
-  margin-left: auto;
-  margin-right: 0;
-  padding-right: clamp(20px, 2vw, 60px);
+.now-swiper-nav {
+  display: flex;
+  align-items: center;
+  gap: 12%;
+}
+.now-swiper-button-prev,
+.now-swiper-button-next {
+  font-size: var(--sub--titler);
+  border: none;
+  background-color: var(--gray-scale--0eee);
+  border-radius: 100%;
+  padding: 20%;
+  cursor: pointer;
+}
+
+/* 스와이퍼 */
+.now-swiper-wrap.inner {
+  width: calc(100% - max(0px, (100vw - 1400px) / 2));
+  margin-left: max(0px, calc((100vw - 1400px) / 2));
+  max-width: 1660px;
 }
 /* 이미지 */
 .nowSwiper img {
   border-radius: 20px;
-}
-.now-swiper-nav {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-/* swiper 기본 absolute 제거 */
-.now-swiper-nav .swiper-button-next,
-.now-swiper-nav .swiper-button-prev {
-  position: static;
-  margin-top: 0;
 }

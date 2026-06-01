@@ -17,8 +17,17 @@ window.addEventListener("load", () => {
     slidesPerView: 3.5,
     spaceBetween: 30,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".now-swiper-button-next",
+      prevEl: ".now-swiper-button-prev",
+    },
+
+    breakpoints: {
+      390: {
+        slidesPerView: 1.5,
+      },
+      768: {
+        slidesPerView: 2.5,
+      },
     },
   });
 });
