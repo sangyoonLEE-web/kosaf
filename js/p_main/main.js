@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
 
   // 지금 찾는 서비스 슬라이드
   var nowSwiper = new Swiper(".nowSwiper", {
-    slidesPerView: 3.5,
+    slidesPerView: 4.5,
     spaceBetween: 30,
     navigation: {
       nextEl: ".now-swiper-button-next",
@@ -23,10 +23,10 @@ window.addEventListener("load", () => {
 
     breakpoints: {
       390: {
-        slidesPerView: 1.5,
+        slidesPerView: 2.5,
       },
       768: {
-        slidesPerView: 2.5,
+        slidesPerView: 3.5,
       },
     },
   });

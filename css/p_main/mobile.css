@@ -1,0 +1,28 @@
+.mobibe-menu-wrap {
+  position: relative;
+  top: 120px;
+  left: 0;
+  width: 100%;
+}
+.mobibe-menu {
+  width: 100%;
+  background-color: var(--main--sub);
+}
+/* 프로필 */
+.m-top {
+    padding: 4%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: var(--icon-shadow);
+}
+.profile {
+  display: flex;
+  gap: 4%;
+}
+.profile-img {
+  width: 20%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--gray-scale--1ddd);
+}
+/*  */

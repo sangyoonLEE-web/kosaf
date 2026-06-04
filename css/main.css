@@ -2,6 +2,9 @@
 @import url("font.css");
 
 /* 리셋 */
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -51,16 +54,16 @@ button {
   --gray-scale--main-txt: rgba(51, 51, 51, 1);
 
   /* Text-size styles */
-  --title--1b: 48px;
-  --title--menub: 20px;
-  --sub--titler: 24px;
-  --sub--titleb: 24px;
-  --menu--sub: 16px;
-  --menu--sub2: 14px;
+  --title--1b: clamp(16px, 3vw, 48px);
+  --title--menub: clamp(12px, 3vw, 20px);
+  --sub--titler: clamp(14px, 3vw, 24px);
+  --sub--titleb: clamp(14px, 3vw, 24px);
+  --menu--sub: clamp(12px, 3vw, 16px);
+  --menu--sub2: clamp(10px, 3vw, 14px);
   --subpage--title: 36px;
-  --subpage--menu: 24px;
-  --sub2--desc20r : 20px;
---sub2--descsmall : 16px; 
+  --subpage--menu: clamp(14px, 3vw, 24px);
+  --sub2--desc20r: clamp(12px, 3vw, 20px);
+  --sub2--descsmall: clamp(12px, 3vw, 16px);
 
   /* Effect styles */
   --icon-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

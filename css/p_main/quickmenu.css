@@ -36,3 +36,60 @@
 .quick-img:hover {
     box-shadow: var(--hover);
 }
+/* 챗봇 */
+.chat-bot {
+  position: fixed;
+  bottom: 1.5%;
+  right: 1.5%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999999;
+}
+html.active .chat-bot,
+body.active .chat-bot {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+#chat img {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: var(--icon-shadow);
+  overflow: hidden;
+}
+#chat span {
+  position: absolute;
+  top: 13px;
+  left: -330%;
+  padding: 8px 15px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: var(--main--blue);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+#chat:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 수정하기 */
+#gotop {
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--main--blue);
+  display: none;
+}
