@@ -118,12 +118,17 @@
       type="text/css"
     />
     <!-- css -->
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/p_main/header.css" />
     <link rel="stylesheet" href="css/p_main/visual.css" />
     <link rel="stylesheet" href="css/p_main/quickmenu.css" />
     <link rel="stylesheet" href="css/p_main/servicenow.css" />
     <link rel="stylesheet" href="css/p_main/ntab.css" />
+    <link rel="stylesheet" href="css/p_main/about.css" />
+    <link rel="stylesheet" href="css/p_main/help.css" />
+    <link rel="stylesheet" href="css/p_main/mobile.css" />
+    <link rel="stylesheet" href="css/res.css" />
 
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -144,6 +149,7 @@
     <script src="/js/p_main/main.js"></script>
     <script src="/js/p_main/calendar.js"></script>
     <script src="/js/p_main/tab.js"></script>
+    <script src="/js/p_main/modal_gotop.js"></script>
   </head>
   <body>
     <!-- 전체 영역 -->
@@ -182,6 +188,108 @@
           <div class="mobile-btn">☰</div>
         </div>
       </header>
+      <!-- 모바일 메뉴 -->
+      <section class="mobibe-menu-wrap">
+        <div class="mobibe-menu inner">
+          <!-- 프로필 -->
+          <div class="m-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="images/ai/quick.png" alt="profile" />
+              </div>
+              <div class="profile-txt">
+                <h3>홍길동</h3>
+                <span>재학중</span>
+                <p>
+                  ㅇㅇ대학교 ㅇㅇ학과 3학년<br />
+                  학번 : 20260123
+                </p>
+              </div>
+            </div>
+            <div class="bell">
+              <a href="#"
+                ><i
+                  class="fa-regular fa-bell"
+                  style="color: rgb(255, 176, 65)"
+                ></i
+              ></a>
+            </div>
+            <button class="my">
+              내 정보 관리
+              <i
+                class="fa-solid fa-angle-right"
+                style="color: rgb(105, 105, 105)"
+              ></i>
+            </button>
+          </div>
+          <!-- 서비스 바로가기 -->
+          <h2>서비스 바로가기</h2>
+          <ul class="s-go">
+            <li>
+              <a href="#"
+                ><p class="s-go-txt">장학금</p>
+                <p class="s-go-i">
+                  <i
+                    class="fa-solid fa-angle-right"
+                    style="color: rgb(105, 105, 105)"
+                  ></i></p
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><p class="s-go-txt">학자금 대출</p>
+                <p class="s-go-i">
+                  <i
+                    class="fa-solid fa-angle-right"
+                    style="color: rgb(105, 105, 105)"
+                  ></i></p
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><p class="s-go-txt">기숙사</p>
+                <p class="s-go-i">
+                  <i
+                    class="fa-solid fa-angle-right"
+                    style="color: rgb(105, 105, 105)"
+                  ></i></p
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><p class="s-go-txt">재단소개</p>
+                <p class="s-go-i">
+                  <i
+                    class="fa-solid fa-angle-right"
+                    style="color: rgb(105, 105, 105)"
+                  ></i></p
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><p class="s-go-txt">고객센터</p>
+                <p class="s-go-i">
+                  <i
+                    class="fa-solid fa-angle-right"
+                    style="color: rgb(105, 105, 105)"
+                  ></i></p
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 챗봇 -->
+      <div class="chat-bot">
+        <!-- help -->
+        <div class="chat-help">
+          <a href="#" id="chat">
+            <img src="images/ai/quick.png" alt="bot" />
+            <span>24시 챗봇 상담 바로가기</span>
+          </a>
+        </div>
+        <!-- gotop -->
+        <a href="#" id="gotop">TOP</a>
+      </div>
       <!-- 비주얼 -->
       <section class="visual-wrap">
         <!-- Swiper -->
@@ -519,7 +627,106 @@
         </div>
       </section>
       <!-- 기관소개 -->
-      <section class="about wrap">
+      <section class="about-wrap">
+        <div class="about-img">
+          <img src="images/banner/notice_banner.png" alt="about" />
+          <div class="inner">
+            <div class="about-txt">
+              <h1>학생의 꿈을 지원하는 한국장학재단</h1>
+              <p>
+                장학금과 학자금 지원을 통해<br />더 많은 학생들이 배움에 집중할
+                수 있도록 함께합니다.
+              </p>
+              <button class="about-btn">자세히 보기</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FNQ, QR -->
+      <section class="helpqr-wrap">
+        <div class="inner">
+          <div class="help">
+            <div class="help-top">
+              <h3>
+                <i
+                  class="fa-solid fa-circle-info"
+                  style="color: rgba(0, 134, 205, 1)"
+                ></i
+                >무엇을 도와드릴까요?
+              </h3>
+              <p>
+                운영시간 : 평일 09시 ~ 18시 <br />
+                ARS : 365일 24시간 운영
+              </p>
+            </div>
+            <div class="help-bot">
+              <ul class="help-type">
+                <li>
+                  <a href="#"
+                    ><div class="h-icon">
+                      <i
+                        class="fa-solid fa-comments"
+                        style="color: rgb(0, 134, 205)"
+                      ></i>
+                    </div>
+                    <p>FAQ</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="h-icon">
+                      <i
+                        class="fa-solid fa-headset"
+                        style="color: rgb(0, 134, 205)"
+                      ></i>
+                    </div>
+                    <p>상담센터</p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="h-icon">
+                      <i
+                        class="fa-solid fa-phone"
+                        style="color: rgb(0, 134, 205)"
+                      ></i>
+                    </div>
+                    <p>
+                      원격지원 및 <br />
+                      전화상담
+                    </p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="qr">
+            <div class="help-top">
+              <h3>
+                <i
+                  class="fa-solid fa-mobile-screen-button"
+                  style="color: rgb(255, 255, 255)"
+                ></i
+                >모바일 서비스
+              </h3>
+              <p>
+                한국장학재단의 다양한 서비스를 <br />
+                모바일에서도 편리하게 이용하세요!
+              </p>
+            </div>
+            <div class="qr-bot">
+              <div class="qr-a">
+                <img src="images/qr/Group 42.png" alt="googleqr" />
+                <img src="images/qr/google.png" alt="googleapp" />
+              </div>
+              <div class="vertical-line"></div>
+              <div class="qr-a">
+                <img src="images/qr/Group 43.png" alt="appleqr" />
+                <img src="images/qr/appstore.png" alt="appleapp" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </body>

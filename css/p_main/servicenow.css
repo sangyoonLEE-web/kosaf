@@ -1,11 +1,8 @@
-/* .service-now-wrap.inner {
-  position: relative;
+.service-now-wrap.inner {
+  width: calc(100% - max(0px, (100vw - 1400px) / 2));
+  margin-left: max(0px, calc((100vw - 1400px) / 2));
   max-width: 1660px;
-  width: 100%;
-  margin-top: 220px;
-  padding-right: 20px;
-  background-color: aliceblue;
-} */
+}
 /* 전체 */
 .service-now-wrap {
   position: relative;
@@ -26,7 +23,7 @@
 .now-swiper-nav {
   display: flex;
   align-items: center;
-  gap: 12%;
+  gap: 10%;
 }
 .now-swiper-button-prev,
 .now-swiper-button-next {

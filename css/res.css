@@ -1,0 +1,35 @@
+@media (max-width: 1400px) {
+  .inner {
+    width: 95%;
+  }
+  /* header */
+  .menu {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1000px) {
+  /* header */
+  .menu {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .inner {
+    width: 90%;
+  }
+  /* header */
+  .mobile-btn {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .header {
+    height: 80px;
+  }
+}
+@media (max-width: 390px) {
+  .inner {
+    width: 85%;
+  }
+}

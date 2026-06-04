@@ -24,7 +24,7 @@
 .search-box {
   position: relative;
   width: 100%;
-  font-size: 38px;
+  font-size: clamp(12px, 2vw, 38px);
   padding: 3%;
   border-radius: 101px;
   color: var(--gray-scale--2999);
@@ -40,7 +40,7 @@
   top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: clamp(10px, 2vw, 30px);
   background-color: var(--main--blue);
   border-radius: 50%;
   border: none;
