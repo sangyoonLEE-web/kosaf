@@ -4,17 +4,16 @@
   margin-bottom: 220px;
 }
 .helpqr-wrap .inner {
-  display: flex;
-  gap: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 .help {
-  max-width: 680px;
-  max-height: 400px;
-  width: calc((100% - 2%) / 2);
+  width: 100%;
   background-color: var(--main--sub);
   border-radius: 20px;
-  padding: 2%;
-  aspect-ratio: 68 / 4;
+  padding: clamp(16px, 2.5%, 32px);
+  box-sizing: border-box;
 }
 .help-top {
   margin-bottom: 2.5%;
@@ -24,7 +23,6 @@
   display: flex;
   gap: 1%;
   align-items: center;
-  text-align: center;
 }
 .help-top p {
   padding-left: 6%;
@@ -43,14 +41,15 @@
   justify-content: space-between;
 }
 .h-icon {
-  font-size: clamp(30px, 4vw, 50px);
-  width: clamp(90px, 7vw, 130px);
-  height: clamp(90px, 7vw, 130px);
+  font-size: clamp(24px, 3vw, 50px);
+  width: clamp(80px, 7vw, 130px);
+  height: clamp(80px, 7vw, 130px);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   background-color: #fff;
+  flex-shrink: 0;
 }
 .help-type li a {
   display: flex;
@@ -59,18 +58,21 @@
   align-items: center;
   gap: 1em;
 }
+
 .help-type li a p {
   font-size: var(--title--menub);
 }
+
 /* qr */
 .qr {
-  max-width: 680px;
-  max-height: 400px;
+  width: 100%;
   background-color: var(--main--sub);
-  width: calc((100% - 2%) / 2);
   border-radius: 20px;
-  padding: 2%;
+  padding: clamp(16px, 2.5%, 32px);
+  box-sizing: border-box;
+  /* max-width, max-height 제거 */
 }
+
 .fa-mobile-screen-button {
   font-size: 12px;
   background-color: var(--main--blue);
@@ -81,27 +83,32 @@
   align-items: center;
   justify-content: center;
 }
+
 .qr-bot {
   width: 90%;
   margin: 0 auto;
   padding: 2% 4%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #fff;
   border-radius: 20px;
+  box-sizing: border-box;
 }
+
 .vertical-line {
   width: 1px;
   height: clamp(70px, 7vw, 150px);
   background-color: var(--gray-scale--1ddd);
 }
+
 .qr-a {
   display: flex;
   flex-direction: column;
   gap: 1em;
   align-items: center;
 }
+
 .qr-a img {
-  width: 60%;
+  width: clamp(60px, 8vw, 120px);
 }

@@ -52,7 +52,7 @@
       name="description"
       content="당신의 꿈은 반드시 이루어집니다. 새로운 시작, 성장의 순간, 희망을 연결하는 한국장학재단"
     />
-    <meta name="Robots" content="noindex, nofollow" />
+    <meta name="robots" content="index, follow" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta
@@ -67,9 +67,12 @@
       property="og:description"
       content="당신의 꿈은 반드시 이루어집니다. 한국장학재단"
     />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <link rel="canonical" href="" />
+    <meta
+      property="og:image"
+      content="https://kosaf.vercel.app/images/banner/main_banner1.jpg"
+    />
+    <meta property="og:url" content="https://kosaf.vercel.app/" />
+    <link rel="canonical" href="https://kosaf.vercel.app/" />
     <!-- Twitter -->
     <meta
       name="twitter:title"
@@ -118,7 +121,6 @@
       type="text/css"
     />
     <!-- css -->
-
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/p_main/header.css" />
     <link rel="stylesheet" href="css/p_main/visual.css" />
@@ -128,6 +130,7 @@
     <link rel="stylesheet" href="css/p_main/about.css" />
     <link rel="stylesheet" href="css/p_main/help.css" />
     <link rel="stylesheet" href="css/p_main/mobile.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/res.css" />
 
     <!-- aos -->
@@ -149,6 +152,7 @@
     <script src="/js/p_main/main.js"></script>
     <script src="/js/p_main/calendar.js"></script>
     <script src="/js/p_main/tab.js"></script>
+    <script src="/js/p_main/header.js"></script>
     <script src="/js/p_main/modal_gotop.js"></script>
   </head>
   <body>
@@ -163,119 +167,123 @@
             /></a>
           </div>
           <ul class="menu">
-            <li><a href="#">장학금</a></li>
+            <li><a href="sub-2.html">장학금</a></li>
             <li><a href="#">학자금대출</a></li>
             <li><a href="#">기숙사</a></li>
             <li><a href="#">재단소개</a></li>
             <li><a href="#">고객센터</a></li>
             <li>
-              <a href="#"
+              <a href="sub-1.html"
                 ><i
                   class="fa-solid fa-arrow-right-to-bracket"
-                  style="color: rgb(0, 0, 0)"
+                  style="color: rgba(0, 134, 205, 1)"
                 ></i
               ></a>
             </li>
             <li>
-              <a href="#"
+              <a href="sub-1.html"
                 ><i
                   class="fa-solid fa-user-plus"
-                  style="color: rgb(0, 0, 0)"
+                  style="color: rgba(0, 134, 205, 1)"
                 ></i
               ></a>
             </li>
           </ul>
-          <div class="mobile-btn">☰</div>
+          <div class="mobile-btn">
+            <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0)"></i>
+          </div>
         </div>
       </header>
       <!-- 모바일 메뉴 -->
       <section class="mobibe-menu-wrap">
-        <div class="mobibe-menu inner">
-          <!-- 프로필 -->
-          <div class="m-top">
-            <div class="profile">
-              <div class="profile-img">
-                <img src="images/ai/quick.png" alt="profile" />
+        <div class="mobibe-menu">
+          <div class="inner">
+            <!-- 프로필 -->
+            <div class="m-top">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="images/ai/quick.png" alt="profile" />
+                </div>
+                <div class="profile-txt">
+                  <h3>홍길동</h3>
+                  <span>재학중</span>
+                  <p>
+                    ㅇㅇ대학교 ㅇㅇ학과 3학년<br />
+                    학번 : 20260123
+                  </p>
+                </div>
               </div>
-              <div class="profile-txt">
-                <h3>홍길동</h3>
-                <span>재학중</span>
-                <p>
-                  ㅇㅇ대학교 ㅇㅇ학과 3학년<br />
-                  학번 : 20260123
-                </p>
+              <div class="bell">
+                <a href="#"
+                  ><i
+                    class="fa-regular fa-bell"
+                    style="color: rgb(255, 176, 65)"
+                  ></i
+                ></a>
               </div>
+              <button onclick="location.href = 'sub-1.html'" class="my">
+                내 정보 관리
+                <i
+                  class="fa-solid fa-angle-right"
+                  style="color: rgb(105, 105, 105)"
+                ></i>
+              </button>
             </div>
-            <div class="bell">
-              <a href="#"
-                ><i
-                  class="fa-regular fa-bell"
-                  style="color: rgb(255, 176, 65)"
-                ></i
-              ></a>
-            </div>
-            <button class="my">
-              내 정보 관리
-              <i
-                class="fa-solid fa-angle-right"
-                style="color: rgb(105, 105, 105)"
-              ></i>
-            </button>
+            <!-- 서비스 바로가기 -->
+            <h2>서비스 바로가기</h2>
+            <ul class="s-go">
+              <li>
+                <a href="sub-2.html"
+                  ><p class="s-go-txt">장학금</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">학자금 대출</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">기숙사</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">재단소개</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">고객센터</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+            </ul>
           </div>
-          <!-- 서비스 바로가기 -->
-          <h2>서비스 바로가기</h2>
-          <ul class="s-go">
-            <li>
-              <a href="#"
-                ><p class="s-go-txt">장학금</p>
-                <p class="s-go-i">
-                  <i
-                    class="fa-solid fa-angle-right"
-                    style="color: rgb(105, 105, 105)"
-                  ></i></p
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><p class="s-go-txt">학자금 대출</p>
-                <p class="s-go-i">
-                  <i
-                    class="fa-solid fa-angle-right"
-                    style="color: rgb(105, 105, 105)"
-                  ></i></p
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><p class="s-go-txt">기숙사</p>
-                <p class="s-go-i">
-                  <i
-                    class="fa-solid fa-angle-right"
-                    style="color: rgb(105, 105, 105)"
-                  ></i></p
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><p class="s-go-txt">재단소개</p>
-                <p class="s-go-i">
-                  <i
-                    class="fa-solid fa-angle-right"
-                    style="color: rgb(105, 105, 105)"
-                  ></i></p
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><p class="s-go-txt">고객센터</p>
-                <p class="s-go-i">
-                  <i
-                    class="fa-solid fa-angle-right"
-                    style="color: rgb(105, 105, 105)"
-                  ></i></p
-              ></a>
-            </li>
-          </ul>
         </div>
       </section>
       <!-- 챗봇 -->
@@ -325,16 +333,16 @@
       <section class="category-wrap inner">
         <ul class="category">
           <li><a href="#"># 학자금 대출</a></li>
-          <li><a href="#"># 장학금 신청</a></li>
+          <li><a href="sub-2.html"># 장학금 신청</a></li>
           <li><a href="#"># 멘토링</a></li>
-          <li><a href="#"># 근로장학금</a></li>
+          <li><a href="sub-2.html"># 근로장학금</a></li>
         </ul>
       </section>
       <!-- 퀵메뉴 -->
       <section class="quick-menu-wrap inner">
         <ul class="quick-menu">
           <li>
-            <a href="#">
+            <a href="sub-2.html">
               <div class="quick-img">
                 <img src="images/icon/main/main1.png" alt="mainicon1" />
               </div>
@@ -346,7 +354,7 @@
               <div class="quick-img">
                 <img src="images/icon/main/main2.png" alt="mainicon2" />
               </div>
-              <p>학자금 대출 신청</p></a
+              <p>학자금 대출 <br>신청</p></a
             >
           </li>
           <li>
@@ -376,46 +384,51 @@
         </ul>
       </section>
       <!-- 지금 가장 많이 찾는 서비스 -->
-      <section class="service-now-wrap inner">
-        <div class="service-top">
-          <h2>지금 가장 많이 찾는 서비스</h2>
-          <div class="now-swiper-nav">
-            <button class="now-swiper-button-prev">
-              <i
-                class="fa-solid fa-angle-left"
-                style="color: rgb(105, 105, 105)"
-              ></i>
-            </button>
-            <button class="now-swiper-button-next">
-              <i
-                class="fa-solid fa-angle-right"
-                style="color: rgb(105, 105, 105)"
-              ></i>
-            </button>
+      <section class="service-now-wrap">
+        <div class="service-now-inner">
+          <div class="service-top">
+            <h2>지금 가장 많이 찾는 서비스</h2>
+            <div class="now-swiper-nav">
+              <button class="now-swiper-button-prev">
+                <i
+                  class="fa-solid fa-angle-left"
+                  style="color: rgb(105, 105, 105)"
+                ></i>
+              </button>
+              <button class="now-swiper-button-next">
+                <i
+                  class="fa-solid fa-angle-right"
+                  style="color: rgb(105, 105, 105)"
+                ></i>
+              </button>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- Swiper -->
-      <section class="now-swiper-wrap inner">
-        <div class="swiper nowSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/cardnews/start.png" alt="start" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/cardnews/money.png" alt="money" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/cardnews/dream.png" alt="dream" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/cardnews/happy.png" alt="happy" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/cardnews/guide.png" alt="guide" />
-            </div>
-            <div class="swiper-slide">
-              <img src="images/cardnews/print.png" alt="print" />
+
+        <!-- Swiper -->
+        <div class="now-swiper-wrap">
+          <div class="swiper nowSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="sub-2.html">
+                  <img src="images/cardnews/start.png" alt="start" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cardnews/money.png" alt="money" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cardnews/dream.png" alt="dream" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cardnews/happy.png" alt="happy" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cardnews/guide.png" alt="guide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cardnews/print.png" alt="print" />
+              </div>
             </div>
           </div>
         </div>
@@ -426,8 +439,8 @@
         <!-- 탭버튼 -->
         <div class="n-tab-top">
           <div class="n-tab-menu">
-            <button class="tab-btn">공지사항</button>
-            <button class="tab-btn active">신청일정</button>
+            <button class="tab-btn active">공지사항</button>
+            <button class="tab-btn">신청일정</button>
             <button class="tab-btn">보도자료</button>
           </div>
           <button class="n-detail">
@@ -528,15 +541,15 @@
                       <td>06-29</td>
                       <td>국가장학금 서류 제출</td>
                     </tr>
-                    <tr>
+                    <tr class="td11">
                       <td>06-29</td>
                       <td>가구원 정보제공 동의</td>
                     </tr>
-                    <tr>
+                    <tr class="td1">
                       <td>-</td>
                       <td>-</td>
                     </tr>
-                    <tr>
+                    <tr class="td2">
                       <td>-</td>
                       <td>-</td>
                     </tr>
@@ -630,7 +643,7 @@
       <section class="about-wrap">
         <div class="about-img">
           <img src="images/banner/notice_banner.png" alt="about" />
-          <div class="inner">
+          <div class="about-inner">
             <div class="about-txt">
               <h1>학생의 꿈을 지원하는 한국장학재단</h1>
               <p>
@@ -728,6 +741,91 @@
           </div>
         </div>
       </section>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <!-- 푸터 상단 로고/패밀리사이트 -->
+          <div class="footer-logo-wrap">
+            <div class="footer-logo-box">
+              <img
+                src="images/logo/kosaf_white_logo.png"
+                alt="한국장학재단 로고"
+              />
+            </div>
+            <ul class="footer-familySite">
+              <li><a href="#">정부기관</a></li>
+              <span></span>
+              <li><a href="#">관련기관</a></li>
+            </ul>
+          </div>
+          <!-- 푸터 상단 로고/패밀리사이트 끝 -->
+          <!-- 주소 -->
+          <div class="footer-address-wrap">
+            <p>이사장 : 박창달</p>
+            <p>사업자번호 : 104-82-10922</p>
+            <address>
+              주소 : (41200) 대구광역시 동구 신암로 125(신암동 819-1)
+              한국장학재단
+            </address>
+            <p>
+              콜센터 1599-2000(유료, ARS : 365일 24시간 운영, 상담원 연결 : 평일
+              09시 ~ 18시)
+            </p>
+          </div>
+          <!-- 주소 영역 끝 -->
+          <!-- 찾아오시는 길 / sns -->
+          <div class="footer-guide-wrap">
+            <ul class="footer-map">
+              <li>
+                <a href="#"
+                  >찾아오시는 길 <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  >조직도 및 부서안내 <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+            </ul>
+            <ul class="footer-sns">
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-blog"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-single-quote-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- 찾아오시는 길 / sns 영역 끝 -->
+          <!-- 개인정보처리방침 -->
+          <div class="footer-copy-wrap">
+            <ul class="footer-personal">
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">이메일집단수집거부</a></li>
+              <li><a href="#">저작권정책</a></li>
+            </ul>
+            <p>COPYRIGHT ⓒ KOREA STUDENT AID FOUNDATION. ALL RIGHT RESERVED.</p>
+          </div>
+          <!-- 개인정보처리방침 영역 끝 -->
+          <!-- 교육부 안내 -->
+          <div class="footer-info-wrap">
+            <div class="footer-info-logo">
+              <img src="images/logo/moe_logo.svg" alt="교육부" />
+            </div>
+            <p>이 누리집은 교육부 산하기관 누리집입니다.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

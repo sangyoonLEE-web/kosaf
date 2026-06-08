@@ -55,7 +55,7 @@ button {
 
   /* Text-size styles */
   --title--1b: clamp(16px, 3vw, 48px);
-  --title--menub: clamp(12px, 3vw, 20px);
+  --title--menub: clamp(14px, 3vw, 20px);
   --sub--titler: clamp(14px, 3vw, 24px);
   --sub--titleb: clamp(14px, 3vw, 24px);
   --menu--sub: clamp(12px, 3vw, 16px);

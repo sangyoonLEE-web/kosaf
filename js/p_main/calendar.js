@@ -41,9 +41,16 @@ window.addEventListener("load", () => {
     function p() {
       f.empty();
       for (var e = 0; e < 7; e++) {
-        f.append("<div>" + s[e].substring(0, 3) + "</div>");
+        var dayName =
+          window.innerWidth <= 768
+            ? s[e].substring(0, 1) // 768px 이하: 첫 글자만
+            : s[e].substring(0, 3); // 768px 초과: 3글자
+        f.append("<div>" + dayName + "</div>");
       }
     }
+    window.addEventListener("resize", function () {
+      p();
+    });
     // function d() {
     //   var t;
     //   var n = $("#calendar").css("width", e + "px");

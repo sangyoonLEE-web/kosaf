@@ -14,9 +14,11 @@
 .header .inner {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .logo {
   width: 20%;
+  min-width: 130px;
 }
 .menu {
   width: 50%;
@@ -28,7 +30,4 @@
 }
 .mobile-btn {
   display: none;
-}
-.header i {
-  color: var(--main--blue) !important;
 }
