@@ -1,14 +1,30 @@
-.service-now-wrap.inner {
+/* .service-now-wrap.inner {
   width: calc(100% - max(0px, (100vw - 1400px) / 2));
   margin-left: max(0px, calc((100vw - 1400px) / 2));
   max-width: 1660px;
-}
+} */
 /* 전체 */
 .service-now-wrap {
   position: relative;
   width: 100%;
   margin-top: 220px;
+  overflow: hidden; /* 스와이퍼 오른쪽 넘침 클립 */
 }
+.service-now-inner {
+  width: 100%;
+  padding-left: max(20px, calc((100vw - 1400px) / 2));
+  padding-right: max(20px, calc((100vw - 1400px) / 2));
+  margin-bottom: 5%;
+}
+
+/* top */
+/* .service-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  width: 100%;
+} */
 /* top */
 .service-top {
   display: flex;
@@ -27,15 +43,20 @@
 }
 .now-swiper-button-prev,
 .now-swiper-button-next {
-  font-size: var(--sub--titler);
+  font-size: clamp(12px, 1.2vw, 20px); /* 글씨 반응형 */
   border: none;
   background-color: var(--gray-scale--0eee);
   border-radius: 100%;
-  padding: 20%;
+  width: clamp(24px, 4vw, 52px);
+  height: clamp(24px, 4vw, 52px);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 /* 스와이퍼 */
+.now-swiper-wrap {
+  padding-left: max(20px, calc((100vw - 1400px) / 2));
+}
 .now-swiper-wrap.inner {
   width: calc(100% - max(0px, (100vw - 1400px) / 2));
   margin-left: max(0px, calc((100vw - 1400px) / 2));

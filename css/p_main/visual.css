@@ -59,6 +59,7 @@
   gap: 1%;
 }
 .category li {
+  font-size:clamp(10px, 2vw, 18px);
   display: flex;
   padding: 1% 1.5%;
   text-align: center;

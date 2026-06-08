@@ -12,14 +12,69 @@
   .menu {
     font-size: 14px;
   }
+  /* margin */
+  .quick-menu-wrap,
+  .service-now-wrap,
+  .n-tab-wrap,
+  .about-wrap,
+  .helpqr-wrap {
+    margin-top: 200px;
+  }
+  /* 검색창 */
+  .search-bar {
+    top: -43px;
+  }
+  .category-wrap {
+    margin-top: -30px;
+  }
+  /* 퀵메뉴 그리드 */
+  .quick-menu {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .quick-menu li {
+    width: 70%;
+  }
+  /* 공지사항 */
+  .n-tab-con.active ul {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* 신청일정 */
+  .td1 {
+    display: none;
+  }
+  /* help */
+  .helpqr-wrap .inner {
+    grid-template-columns: 1fr;
+  }
+  .help,
+  .qr {
+    max-width: 100%;
+  }
+  .help-top p {
+    margin-bottom: 1.5em;
+  }
+  .h-icon {
+    width: clamp(60px, 10vw, 100px);
+    height: clamp(60px, 10vw, 100px);
+    font-size: clamp(20px, 5vw, 40px);
+  }
 }
 @media (max-width: 768px) {
   .inner {
     width: 90%;
   }
+  /* margin */
+  .quick-menu-wrap,
+  .service-now-wrap,
+  .n-tab-wrap,
+  .about-wrap,
+  .helpqr-wrap {
+    margin-top: 150px;
+  }
   /* header */
   .mobile-btn {
     display: block;
+    font-size: clamp(18px, 3vw, 24px);
   }
   .menu {
     display: none;
@@ -27,9 +82,134 @@
   .header {
     height: 80px;
   }
+  /* visual */
+  .visual-wrap {
+    margin-top: 80px;
+  }
+  /* 검색창 */
+  .search-bar {
+    top: -33px;
+  }
+  .category-wrap {
+    margin-top: -20px;
+  }
+  /* 신청 일정 */
+  .td2 {
+    display: none;
+  }
+  .schedule-table tbody tr:nth-child(4) td {
+    border-bottom: none;
+  }
+  /* about */
+  .about-img img {
+    aspect-ratio: 8 / 3; /* 768px 이하에서 세로 늘림 */
+    object-fit: fill; /* 이미지 늘려서 꽉 채움 */
+  }
+  /* gotop, chatbot */
+  #chat img {
+    width: 55px;
+    height: 55px;
+  }
+  #chat span {
+    top: 11px;
+    left: -360%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  #gotop {
+    width: 55px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 600px) {
+  /* margin */
+  .quick-menu-wrap,
+  .service-now-wrap,
+  .n-tab-wrap,
+  .about-wrap,
+  .helpqr-wrap {
+    margin-top: 100px;
+  }
+  /* 모바일 메뉴 */
+  .profile-txt span {
+    left: 40%;
+  }
+  .s-go li {
+    border-radius: 10px;
+  }
+  /* 검색창 */
+  .search-bar {
+    top: -23px;
+  }
+  .category-wrap {
+    margin-top: -10px;
+  }
+  /* 공지사항 */
+  .n-desc {
+    padding-bottom: 2em;
+  }
+  /* 신청일자 */
+  #calendar {
+    width: 45%;
+  }
+  .td11 {
+    display: none;
+  }
+  .schedule-table tbody tr:nth-child(3) td {
+    border-bottom: none;
+  }
+  #calendar_header {
+    font-size: 0.7em;
+  }
+  .about-img img {
+    aspect-ratio: 7.5 / 3; /* 768px 이하에서 세로 늘림 */
+  }
 }
 @media (max-width: 390px) {
   .inner {
     width: 85%;
+  }
+  /* margin */
+  .quick-menu-wrap,
+  .service-now-wrap,
+  .n-tab-wrap,
+  .about-wrap,
+  .helpqr-wrap {
+    margin-top: 80px;
+  }
+
+  /* 검색창 */
+  .search-bar {
+    top: -16px;
+  }
+  .category-wrap {
+    margin-top: -10px;
+  }
+  /* 공지사항 */
+  .n-desc {
+    padding-bottom: 1.5em;
+  }
+  /* 신청일정 */
+  .td11 {
+    display: none;
+  }
+  /* 모바일 메뉴 */
+  .s-go {
+    gap: 15px;
+  }
+  /* gotop, chatbot */
+  #chat img {
+    width: 45px;
+    height: 45px;
+  }
+  #chat span {
+    top: 9px;
+    left: -380%;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  #gotop {
+    width: 45px;
+    line-height: 45px;
   }
 }

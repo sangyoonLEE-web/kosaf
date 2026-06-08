@@ -18,14 +18,25 @@
   align-items: center;
   background-color: var(--gray-scale--0eee);
   border-radius: 50px;
+  flex-wrap: nowrap; /* 버튼 줄바꿈 방지 */
 }
-.tab-btn {
+/* .tab-btn {
   border: none;
   border-radius: 50px;
   font-size: var(--title--menub);
-  padding: clamp(10px, 1vw, 14px) clamp(16px, 2vw, 24px);
+  background-color: var(--gray-scale--0eee);
+  padding: 15px 20px;
   cursor: pointer;
-  color: var(--gray-scale--sub-txt666);
+} */
+.tab-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: clamp(12px, 1.2vw, 20px); /* 글씨 반응형 */
+  background-color: var(--gray-scale--0eee);
+  padding: clamp(8px, 1vw, 15px) clamp(12px, 1.5vw, 20px); /* padding 반응형 */
+  cursor: pointer;
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+  flex-shrink: 0;
 }
 .tab-btn.active {
   background-color: var(--main--blue);
@@ -33,11 +44,13 @@
 }
 .n-detail {
   border: none;
-  font-size: var(--title--menub);
+  font-size: clamp(12px, 1.2vw, 20px); /* 글씨 반응형 */
   background-color: var(--gray-scale--0eee);
   border-radius: 100%;
-  padding: 1%;
   cursor: pointer;
+  width: clamp(24px, 4vw, 52px);
+  height: clamp(24px, 4vw, 52px);
+  flex-shrink: 0;
 }
 .n-tab-con.active {
   width: 100%;
@@ -97,10 +110,14 @@ hr {
   color: var(--gray-scale--0eee);
 }
 .n-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   padding: 1em 0;
   font-size: var(--title--menub);
 }
 .n-desc {
+  font-size: var(--menu--sub);
   flex-grow: 1;
   line-height: 1.2;
   padding-bottom: 8em;
@@ -174,7 +191,7 @@ hr {
   border-radius: 12px 12px 0px 0px;
 }
 #calendar_header h1 {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #ffffff;
   float: left;
   width: 70%;
@@ -199,6 +216,7 @@ i[class^="fa fa-chevron"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: clamp(12px, 2vw, 16px);
 }
 /* 일정 */
 .schedule-table {
@@ -218,29 +236,34 @@ i[class^="fa fa-chevron"] {
 
 .schedule-table th,
 .schedule-table td {
-  height: clamp(40px, 5vw, 71px);
+  height: clamp(30px, 5vw, 71px);
   text-align: center;
   border-bottom: 1px solid var(--gray-scale--2999);
 }
 
 .schedule-table th {
   background-color: var(--sub-point--skyblue);
-  font-size: var(--title--menub);
+  font-size: clamp(12px, 2vw, 16px);
   font-weight: 700;
   color: #333;
 }
 
 .schedule-table td {
-  font-size: var(--title--menub);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: clamp(12px, 2vw, 16px);
   color: var(--gray-scale--sub-txt666);
 }
-
 .schedule-table th:first-child,
 .schedule-table td:first-child {
   width: 30%;
   border-right: 1px solid var(--gray-scale--sub-txt666);
 }
-
+.schedule-table th:last-child,
+.schedule-table td:last-child {
+  padding: 0 10px;
+}
 .schedule-table tbody tr:last-child td {
   border-bottom: none;
 }
@@ -257,4 +280,7 @@ i[class^="fa fa-chevron"] {
 /* 작업 중 다른 탭 숨김 처리 */
 .n-tab-con {
   display: none;
+}
+.n-tab-con.active {
+  display: block;
 }
