@@ -154,12 +154,12 @@ body {
 }
 
 .container3 .inner .step {
-  display: flex;
-  gap: 30px;
+  /* display: flex;
+  gap: 30px; */
   color: var(--gray-scale--2999);
 }
 
-.container3 .inner .step i {
+.step1-4 .step .i {
   font-size: 40px;
 }
 
@@ -177,7 +177,6 @@ body {
   width: 231px;
   height: 50px;
   font-size: 18px;
-
   background-color: var(--main--sub);
   border-radius: 10px;
   color: var(--gray-scale--2999);
@@ -209,45 +208,60 @@ body {
 .step {
   width: 200px;
   height: 300px;
-
   border: 1px solid #d9d9d9;
   border-radius: 100px;
-
   background: #fff;
-
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  gap: 10px;
-
   color: #888;
+  display: flex;
 }
 
-/* 현재 진행중 */
-.step.active {
-  border: 2px solid #3b9cff;
-  box-shadow: 0 0 15px rgba(59, 156, 255, 0.3);
-  color: #3b9cff;
+/* step-hover */
+.step:hover {
+  border: 2px solid #0086cd;
+  box-shadow: 0 0 20px #0086cd;
+  color: #0086cd;
+}
+.step:hover .step-number {
+  color: #0086cd;
+}
+.step:hover .step-icon {
+  color: #0086cd;
+}
+.step:hover p {
+  color: #0086cd;
+}
+.step:hover h3 {
+  color: #0086cd;
+}
+/*  */
+
+.step .line {
+  width: 55px;
+  height: 1px;
+  background: #dddddd;
+  margin: 15px auto;
 }
 
 .step-number {
   font-size: 16px;
-  margin-top: 27px;
+  margin-bottom: 27px;
 }
 
 .step-icon {
   font-size: 56px;
+  margin-bottom: 20px;
 }
 
 .step h3 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .step p {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 /* 화살표 */
@@ -265,12 +279,187 @@ body {
 }
 .step1-4 {
   display: flex;
+  justify-content: space-between;
 }
 
 .step1-4 .arrow {
-
-margin: auto 37px;
-
+  margin: auto 37px;
 }
 
+/* 그룹4 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.service-wrap {
+  /* max-width: 900px; */
+  margin: 30px auto;
+}
+
+.service-wrap .inner {
+  display: flex;
+  justify-content: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 110px 0px;
+}
+
+.service-card {
+  width: 680px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+
+  text-decoration: none;
+  color: #222;
+
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 50px;
+
+  flex-shrink: 0;
+}
+
+.blue {
+  background: #2f7dd1;
+}
+
+.green {
+  background: #7ac70c;
+}
+
+.purple {
+  background: #4031c9;
+}
+
+.orange {
+  background: #f3a629;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h3 {
+  font-size: 30px;
+
+  margin-bottom: 12px;
+}
+
+.content p {
+  font-size: 27px;
+  color: #888;
+}
+
+.arrow {
+  color: #777;
+  font-size: 25px;
+}
+
+/* 그룹5 */
+
+.app-banner .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main--sub);
+}
+
+.app-banner {
+  margin-top: 30px;
+  padding: 18px 24px;
+  background: #eef4fa;
+}
+
+.app-banner-left {
+  display: flex;
+  gap: 35px;
+}
+.app-banner-left .mobile-img {
+  width: 151px;
+  height: 224px;
+}
+
+.banner-content {
+  flex: 1;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+.banner-content h4 {
+  font-size: 30px;
+  margin-bottom: 21px;
+}
+
+.banner-content p {
+  font-size: 27px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.store .store-appstore {
+  display: flex;
+  gap: 22.5px;
+  flex-direction: column;
+}
+.store {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.store .store-gogle {
+  display: flex;
+  gap: 22.5px;
+  flex-direction: column;
+}
+.store .store-gogle .QR1 {
+  width: 109px;
+  height: 112px;
+}
+.store .store-appstore .QR2 {
+  width: 109px;
+  height: 112px;
+}
+
+.store .store-gogle .banner1 {
+  width: 129px;
+  height: 38px;
+}
+
+.store .store-appstore .banner2 {
+  width: 129px;
+  height: 38px;
+}
+
+.store .store-line {
+  width: 1px;
+  height: 189px;
+  color: red;
+}
