@@ -30,26 +30,38 @@
     />
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/p_main/mobile.css">
+    <link rel="stylesheet" href="css/p_main/quickmenu.css">
     <link rel="stylesheet" href="css/p_sub2/p_sub2.css" />
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/res.css">
 
+    <!-- waypoint -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
     <!-- js 연결 -->
+     <script src="js/p_main/header.js"></script>
+     <script src="js/p_main/modal_gotop.js"></script>
     <script src="js/p_sub2/p_sub2.js"></script>
   </head>
   <body>
     <!-- 전체 -->
     <div class="wrap">
-      <!-- 헤더 -->
+                  <!-- 헤더 -->
       <header class="header">
         <div class="inner">
           <div class="logo">
-            <a href="index.html"
+            <a href="#"
               ><img src="images/logo/kosaf_logo.svg" alt="kosaf_logo"
             /></a>
           </div>
           <ul class="menu">
-            <li><a href="#">장학금</a></li>
+            <li><a href="sub-2.html">장학금</a></li>
             <li><a href="#">학자금대출</a></li>
             <li><a href="#">기숙사</a></li>
             <li><a href="#">재단소개</a></li>
@@ -58,7 +70,7 @@
               <a href="sub-1.html"
                 ><i
                   class="fa-solid fa-arrow-right-to-bracket"
-                  style="color: rgb(0, 0, 0)"
+                  style="color: rgba(0, 134, 205, 1)"
                 ></i
               ></a>
             </li>
@@ -66,13 +78,120 @@
               <a href="sub-1.html"
                 ><i
                   class="fa-solid fa-user-plus"
-                  style="color: rgb(0, 0, 0)"
+                  style="color: rgba(0, 134, 205, 1)"
                 ></i
               ></a>
             </li>
           </ul>
+          <div class="mobile-btn">
+            <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0)"></i>
+          </div>
         </div>
       </header>
+      <!-- 모바일 메뉴 -->
+      <section class="mobibe-menu-wrap">
+        <div class="mobibe-menu">
+          <div class="inner">
+            <!-- 프로필 -->
+            <div class="m-top">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="images/ai/quick.png" alt="profile" />
+                </div>
+                <div class="profile-txt">
+                  <h3>홍길동</h3>
+                  <span>재학중</span>
+                  <p>
+                    ㅇㅇ대학교 ㅇㅇ학과 3학년<br />
+                    학번 : 20260123
+                  </p>
+                </div>
+              </div>
+              <div class="bell">
+                <a href="#"
+                  ><i
+                    class="fa-regular fa-bell"
+                    style="color: rgb(255, 176, 65)"
+                  ></i
+                ></a>
+              </div>
+              <button onclick="location.href = 'sub-1.html'" class="my">
+                내 정보 관리
+                <i
+                  class="fa-solid fa-angle-right"
+                  style="color: rgb(105, 105, 105)"
+                ></i>
+              </button>
+            </div>
+            <!-- 서비스 바로가기 -->
+            <h2>서비스 바로가기</h2>
+            <ul class="s-go">
+              <li>
+                <a href="sub-2.html"
+                  ><p class="s-go-txt">장학금</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">학자금 대출</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">기숙사</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">재단소개</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">고객센터</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 챗봇 -->
+      <div class="chat-bot">
+        <!-- help -->
+        <div class="chat-help">
+          <a href="#" id="chat">
+            <img src="images/ai/quick.png" alt="bot" />
+            <span>24시 챗봇 상담 바로가기</span>
+          </a>
+        </div>
+        <!-- gotop -->
+        <a href="#" id="gotop">TOP</a>
+      </div>
       <!-- 비주얼 -->
       <div class="produce-visual">
         <img src="images/banner/sub2_banner.png" alt="국가장학금" />
