@@ -36,7 +36,14 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/p_main/header.css" />
     <link rel="stylesheet" href="css/p_sub1/p_sub1.css" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/p_main/mobile.css" />
+    <link rel="stylesheet" href="css/p_main/quickmenu.css" />
+    <link rel="stylesheet" href="css/p_sub1/res.css" />
+    <link rel="stylesheet" href="css/res.css" />
+    <!-- js연결 -->
+    <script src="js/p_main/header.js"></script>
+    <script src="js/p_main/modal_gotop.js"></script>
     <title>마이페이지</title>
   </head>
 
@@ -51,31 +58,137 @@
             /></a>
           </div>
           <ul class="menu">
-            <li><a href="#">장학금</a></li>
+            <li><a href="sub-2.html">장학금</a></li>
             <li><a href="#">학자금대출</a></li>
             <li><a href="#">기숙사</a></li>
             <li><a href="#">재단소개</a></li>
             <li><a href="#">고객센터</a></li>
             <li>
-              <a href="#"
+              <a href="sub-1.html"
                 ><i
                   class="fa-solid fa-arrow-right-to-bracket"
-                  style="color: rgb(0, 0, 0)"
+                  style="color: rgba(0, 134, 205, 1)"
                 ></i
               ></a>
             </li>
             <li>
-              <a href="#"
+              <a href="sub-1.html"
                 ><i
                   class="fa-solid fa-user-plus"
-                  style="color: rgb(0, 0, 0)"
+                  style="color: rgba(0, 134, 205, 1)"
                 ></i
               ></a>
             </li>
           </ul>
-          <div class="mobile-btn">☰</div>
+          <div class="mobile-btn">
+            <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0)"></i>
+          </div>
         </div>
       </header>
+      <!-- 모바일 메뉴 -->
+      <section class="mobibe-menu-wrap">
+        <div class="mobibe-menu">
+          <div class="inner">
+            <!-- 프로필 -->
+            <div class="m-top">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="images/ai/quick.png" alt="profile" />
+                </div>
+                <div class="profile-txt">
+                  <h3>홍길동</h3>
+                  <span>재학중</span>
+                  <p>
+                    ㅇㅇ대학교 ㅇㅇ학과 3학년<br />
+                    학번 : 20260123
+                  </p>
+                </div>
+              </div>
+              <div class="bell">
+                <a href="#"
+                  ><i
+                    class="fa-regular fa-bell"
+                    style="color: rgb(255, 176, 65)"
+                  ></i
+                ></a>
+              </div>
+              <button onclick="location.href = 'sub-1.html'" class="my">
+                내 정보 관리
+                <i
+                  class="fa-solid fa-angle-right"
+                  style="color: rgb(105, 105, 105)"
+                ></i>
+              </button>
+            </div>
+            <!-- 서비스 바로가기 -->
+            <h2>서비스 바로가기</h2>
+            <ul class="s-go">
+              <li>
+                <a href="sub-2.html"
+                  ><p class="s-go-txt">장학금</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">학자금 대출</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">기숙사</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">재단소개</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="s-go-txt">고객센터</p>
+                  <p class="s-go-i">
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: rgb(105, 105, 105)"
+                    ></i></p
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 챗봇 -->
+      <div class="chat-bot">
+        <!-- help -->
+        <div class="chat-help">
+          <a href="#" id="chat">
+            <img src="images/ai/quick.png" alt="bot" />
+            <span>24시 챗봇 상담 바로가기</span>
+          </a>
+        </div>
+        <!-- gotop -->
+        <a href="#" id="gotop">TOP</a>
+      </div>
 
       <!-- 그룹1 -->
       <div class="container1">
@@ -127,7 +240,7 @@
           <div class="inner-right">
             <!-- 최근알림 -->
 
-            <div class="card1">
+            <div class="card">
               <div class="card-icon">
                 <i
                   class="fa-regular fa-bell"
@@ -142,7 +255,7 @@
               <button>알림 확인</button>
             </div>
             <!-- 제출 필요 서류 -->
-            <div class="card2">
+            <div class="card">
               <div class="card-icon">
                 <i
                   class="fa-regular fa-file-lines"
@@ -158,162 +271,259 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 그룹3: 지원step -->
+      <!-- 그룹3: 지원step -->
 
-    <!-- 상단 -->
-    <div class="container3">
-      <div class="inner">
-        <div class="top-txt">
-          <h1>2026 2학기 신청 진행 현황</h1>
-          <button class="btn-detail">
-            신청현황 자세히 보기
-            <span
-              ><i
+      <!-- 상단 -->
+      <div class="container3">
+        <div class="inner">
+          <div class="top-txt">
+            <h1>2026 2학기 신청 진행 현황</h1>
+            <button class="btn-detail">
+              <span>신청현황 자세히 보기</span>
+              <i
                 class="fa-solid fa-chevron-right"
                 style="color: rgb(145, 145, 145)"
               ></i>
-            </span>
-          </button>
+            </button>
+          </div>
+
+          <!-- 하단 -->
+          <div class="step1-4">
+            <div class="step">
+              <span class="step-number">STEP 1</span>
+              <i class="fa-regular fa-clipboard step-icon"></i>
+              <h3>가구원 동의</h3>
+              <div class="line"></div>
+              <p>완료</p>
+            </div>
+
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="step">
+              <span class="step-number">STEP 2</span>
+              <i class="fa-regular fa-pen-to-square step-icon"></i>
+              <h3>지원구간 산정</h3>
+              <div class="line"></div>
+              <p>진행중</p>
+            </div>
+
+            <div class="arrow arrow-hidden">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="step">
+              <span class="step-number">STEP 3</span>
+              <i class="fa-regular fa-file-lines step-icon"></i>
+              <h3>학생정보 심사</h3>
+              <div class="line"></div>
+              <p>대기</p>
+            </div>
+
+            <div class="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="step">
+              <span class="step-number">STEP 4</span>
+              <i class="fa-regular fa-square-check step-icon"></i>
+              <h3>장학금 지급</h3>
+              <div class="line"></div>
+              <p>대기</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- 그룹4:  -->
 
-        <!-- 하단 -->
-        <div class="step1-4">
-          <div class="step">
-            <span class="step-number">STEP 1</span>
-            <i class="fa-regular fa-clipboard step-icon"></i>
-            <h3>가구원 동의</h3>
-            <div class="line"></div>
-            <p>완료</p>
-          </div>
+      <div class="service-wrap">
+        <div class="inner">
+          <div class="service-grid">
+            <a href="#" class="service-card">
+              <div class="icon blue">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
 
-          <div class="arrow">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
+              <div class="content">
+                <h3>장학금 신청/수혜 내역</h3>
+                <p>진행중인 신청 2건</p>
+              </div>
 
-          <div class="step">
-            <span class="step-number">STEP 2</span>
-            <i class="fa-regular fa-pen-to-square step-icon"></i>
-            <h3>지원구간 산정</h3>
-            <div class="line"></div>
-            <p>진행중</p>
-          </div>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
 
-          <div class="arrow">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
+            <a href="#" class="service-card">
+              <div class="icon green">
+                <i class="fa-solid fa-file-circle-check"></i>
+              </div>
 
-          <div class="step">
-            <span class="step-number">STEP 3</span>
-            <i class="fa-regular fa-file-lines step-icon"></i>
-            <h3>학생정보 심사</h3>
-            <div class="line"></div>
-            <p>대기</p>
-          </div>
+              <div class="content">
+                <h3>학자금 대출 신청 / 상환 내역</h3>
+                <p>대출 상환 대기 1건</p>
+              </div>
 
-          <div class="arrow">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
 
-          <div class="step">
-            <span class="step-number">STEP 4</span>
-            <i class="fa-regular fa-square-check step-icon"></i>
-            <h3>장학금 지급</h3>
-            <div class="line"></div>
-            <p>대기</p>
+            <a href="#" class="service-card">
+              <div class="icon purple">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+
+              <div class="content">
+                <h3>증명서 발급</h3>
+                <p>수혜증명서 등 즉시 발급</p>
+              </div>
+
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="#" class="service-card">
+              <div class="icon orange">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+
+              <div class="content">
+                <h3>1:1 상담 내역</h3>
+                <p>답변 완료 1건</p>
+              </div>
+
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- 그룹4:  -->
+      <!-- 그룹5 -->
 
-    <div class="service-wrap">
-      <div class="inner">
-        <div class="service-grid">
-          <a href="#" class="service-card">
-            <div class="icon blue">
-              <i class="fa-solid fa-graduation-cap"></i>
+      <div class="app-banner">
+        <div class="inner">
+          <div class="app-banner-left">
+            <img class="mobile-img" src="images/ai/mobile.png" alt="" />
+
+            <div class="banner-content">
+              <h4>한국장학재단 모바일 앱</h4>
+              <p>
+                언제 어디서나 쉽고 빠르게<br />장학금 및 학자금 서비스를
+                이용하세요!
+              </p>
             </div>
-
-            <div class="content">
-              <h3>장학금 신청/수혜 내역</h3>
-              <p>진행중인 신청 2건</p>
+          </div>
+          <!-- store -->
+          <div class="store">
+            <div class="store-gogle">
+              <img class="QR1" src="images/qr/Group 42.png" alt="QR" />
+              <img class="banner1" src="images/qr/google.png" alt="구글" />
             </div>
+            <div class="store-line"></div>
 
-            <i class="fa-solid fa-chevron-right arrow"></i>
-          </a>
-
-          <a href="#" class="service-card">
-            <div class="icon green">
-              <i class="fa-solid fa-file-circle-check"></i>
+            <div class="store-appstore">
+              <img class="QR2" src="images/qr/Group 43.png" alt="QR" />
+              <img
+                class="banner2"
+                src="images/qr/appstore.png"
+                alt="앱스토어"
+              />
             </div>
-
-            <div class="content">
-              <h3>학자금 대출 신청 / 상환 내역</h3>
-              <p>대출 상환 대기 1건</p>
-            </div>
-
-            <i class="fa-solid fa-chevron-right arrow"></i>
-          </a>
-
-          <a href="#" class="service-card">
-            <div class="icon purple">
-              <i class="fa-regular fa-file-lines"></i>
-            </div>
-
-            <div class="content">
-              <h3>증명서 발급</h3>
-              <p>수혜증명서 등 즉시 발급</p>
-            </div>
-
-            <i class="fa-solid fa-chevron-right arrow"></i>
-          </a>
-
-          <a href="#" class="service-card">
-            <div class="icon orange">
-              <i class="fa-regular fa-face-smile"></i>
-            </div>
-
-            <div class="content">
-              <h3>1:1 상담 내역</h3>
-              <p>답변 완료 1건</p>
-            </div>
-
-            <i class="fa-solid fa-chevron-right arrow"></i>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- 그룹5 -->
-
-    <div class="app-banner">
-      <div class="inner">
-        <div class="app-banner-left">
-          <img class="mobile-img" src="images/ai/mobile.png" alt="" />
-
-          <div class="banner-content">
-            <h4>한국장학재단 모바일 앱</h4>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <!-- 푸터 상단 로고/패밀리사이트 -->
+          <div class="footer-logo-wrap">
+            <div class="footer-logo-box">
+              <img
+                src="images/logo/kosaf_white_logo.png"
+                alt="한국장학재단 로고"
+              />
+            </div>
+            <ul class="footer-familySite">
+              <li><a href="#">정부기관</a></li>
+              <span></span>
+              <li><a href="#">관련기관</a></li>
+            </ul>
+          </div>
+          <!-- 푸터 상단 로고/패밀리사이트 끝 -->
+          <!-- 주소 -->
+          <div class="footer-address-wrap">
+            <p>이사장 : 박창달</p>
+            <p>사업자번호 : 104-82-10922</p>
+            <address>
+              주소 : (41200) 대구광역시 동구 신암로 125(신암동 819-1)
+              한국장학재단
+            </address>
             <p>
-              언제 어디서나 쉽고 빠르게<br />장학금 및 학자금 서비스를
-              이용하세요!
+              콜센터 1599-2000(유료, ARS : 365일 24시간 운영, 상담원 연결 : 평일
+              09시 ~ 18시)
             </p>
           </div>
-        </div>
-        <!-- store -->
-        <div class="store">
-          <div class="store-gogle">
-            <img class="QR1" src="images/qr/Group 42.png" alt="QR" />
-            <img class="banner1" src="images/qr/google.png" alt="구글" />
+          <!-- 주소 영역 끝 -->
+          <!-- 찾아오시는 길 / sns -->
+          <div class="footer-guide-wrap">
+            <ul class="footer-map">
+              <li>
+                <a href="#"
+                  >찾아오시는 길 <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  >조직도 및 부서안내 <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </li>
+            </ul>
+            <ul class="footer-sns">
+              <li>
+                <a href="https://www.instagram.com/kosaf_official/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/kosafdream"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://x.com/KOSAF_Loan"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://blog.naver.com/dreamcampus"
+                  ><i class="fa-solid fa-blog"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://story.kakao.com/ch/kosafdream"
+                  ><i class="fa-solid fa-single-quote-right"></i
+                ></a>
+              </li>
+            </ul>
           </div>
-          <div class="store-line"></div>
-
-          <div class="store-appstore">
-            <img class="QR2" src="images/qr/Group 43.png" alt="QR" />
-            <img class="banner2" src="images/qr/appstore.png" alt="앱스토어" />
+          <!-- 찾아오시는 길 / sns 영역 끝 -->
+          <!-- 개인정보처리방침 -->
+          <div class="footer-copy-wrap">
+            <ul class="footer-personal">
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">이메일집단수집거부</a></li>
+              <li><a href="#">저작권정책</a></li>
+            </ul>
+            <p>COPYRIGHT ⓒ KOREA STUDENT AID FOUNDATION. ALL RIGHT RESERVED.</p>
+          </div>
+          <!-- 개인정보처리방침 영역 끝 -->
+          <!-- 교육부 안내 -->
+          <div class="footer-info-wrap">
+            <div class="footer-info-logo">
+              <img src="images/logo/moe_logo.svg" alt="교육부" />
+            </div>
+            <p>이 누리집은 교육부 산하기관 누리집입니다.</p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
