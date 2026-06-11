@@ -48,7 +48,7 @@
 .process-list li i{
     padding: 20px 0;
     /* font-size: 60px; */
-    font-size: clamp(43px, 3vw, 60px);
+    font-size: clamp(24px, 3vw, 60px);
     color: var(--main--blue);
 }
 .process-list li h3{
@@ -58,6 +58,7 @@
     color: var(--gray-scale--main-txt);
 }
 .process-list li p{
+    font-size: var(--menu--sub);
     text-align: center;
     word-break: keep-all; /* 어절 단위로만 줄바꿈 */
     color: var(--gray-scale--sub-txt666);
